@@ -44,17 +44,17 @@ VoiceAttack 2 插件 —— 完整的虚拟 Xbox 360 控制器。通过 ViGEmBus
   %APPDATA%\VoiceAttack2\Apps\VGamepad\
 ```
 
-> 如果 `HermesVGamepad` 目录不存在就手动创建。两个文件必须放在同一个目录里。
+> 如果 `VGamepad` 目录不存在就手动创建。两个文件必须放在同一个目录里。
 
 ### 第三步：在 VoiceAttack 2 中启用插件
 
 1. 打开 VoiceAttack 2
 2. **Options → General → 勾选 "Enable Plugin Support"**
-3. 重启 VoiceAttack
+3. 重启 VoiceAttack 2
 4. 检查日志，应该看到绿色信息：
 
    ```
-   [HermesVGamepad] Virtual Xbox 360 controller connected.
+   [VGamepad] Virtual Xbox 360 controller connected.
    ```
 
 5. 验证：Win+R → 输入 `joy.cpl` → 应该能看到 "Xbox 360 Controller for Windows"
@@ -284,7 +284,7 @@ RELEASE
 ### 构建
 
 ```powershell
-cd HermesVGamepad
+cd VoiceAttack-Plugin-VGamepad
 dotnet restore
 dotnet build -c Release
 ```
